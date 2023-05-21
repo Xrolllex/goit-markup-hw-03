@@ -8,6 +8,7 @@
     --contact-color: #757575;
 }
 
+
 a , li {
     text-decoration: none;
     font-style: normal;
@@ -19,6 +20,7 @@ a , li {
 ul {
     display: flex;
     list-style: none;
+
 }
 
 body {
@@ -30,9 +32,41 @@ body {
     line-height: 1.17;
     font-weight: 400;
     
+    
 }
 
-/*Header*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+  
+}
+
+.section {
+    padding-block: 94px;
+}
+
+
+/*Header*/    
+
+.page-header {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.nav-menu {
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 15px 25px 15px;
+    letter-spacing: 0.02em;
+    margin-left: 93px;
+}
+
+.nav-menu li{
+    max-width: 254px;
+    margin-right: 46px;
+}
 
 .nav-menu :hover {
     color: var(--basic-color);
@@ -43,41 +77,77 @@ body {
 
 .logo {
     font-size: 26px;
-        font-weight: 700;
-        font-family: Raleway;
+    font-weight: 700;
+    font-family: Raleway;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 215px;
+
 
 }
-
 
 .web {
     color: var(--basic-color);
     
 }
-
-.address > ul > li >a  {
+.header-address {
+   margin-left: 364px;
+padding: 24px 15px 25px 15px
+    
+    
+}
+.header-address > ul > li > a  {
     color: var(--contact-color);
+    margin-right: 50px;
+    
 }
 
-.address :hover {
+.header-address :hover {
     color: var(--basic-color);
 }
 
-.address :focus {
+.header-address :focus {
     color: var(--basic-color);
 }
+
+/* service categories buttons */
+
+.buttons {
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.service-categories {
+    padding: 94px 0;
+}
+
+
 
 /* slider */
 
 .slider {
-    text-align: center;
     background-color: var(--background-one);
-    color: #fff;
-    padding: 1%;
-    line-height: 1.4;
-    font-weight: 900;
-   
-
+    display: block;
+    width: auto;
+    height: 600px;
+    text-align: center;
+    margin-top: -40px;
+    
 }
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+    padding-top: 200px ;
+    padding-left: 452px;
+    padding-right: 452px;
+}
+
 
 .service-button {
         background-color: var(--basic-color);
@@ -87,55 +157,115 @@ body {
         border: none;
         border-radius: 3px;
         font-weight: 700;
-        line-height: 1.9;
+        line-height: 1.9; 
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    
+}
+
+/* service offer */
+
+.service-offer li{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+        
        
+}
+.service-offer-two li{
+    margin-right: 30px;
+    margin-bottom: 30px;
+   
+}
+.service-offer-three  li {
+    margin-right: 30px;
+    
+}
+
+.service-offer-three {
+    padding-bottom: 94px;
+    
+}
+
+.description {
+    border: 1px solid #EEEEEE;
+    margin-top: -10px;
+    padding-left:24px ;
 }
 
 /* Lorem Ipsum */
 
 
-.lorem-ipsum > ul > li > h3  {
-    font-size: 14px;
-    font-weight: 700;
-   
+.lorem-ipsum{
+    padding-top: 94px;
+
 }
 
-.lorem-ipsum > ul > li > p {
-    font-size: 14px;
-    color: var(--contact-color);
-    line-height: 2;
-    
+.item-list {
+     padding-right: 30px;
+        
 }
 
+.item-list h3 {
+    font-size: 14px;
+}
+
+.item-list p {
+    color: #757575;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    width: 270px;
+}
 
 
 /* What are we doing */
 
-.doing {
-    display: block;
+
+ h2 {
+    font-size: 36px;
+    padding-bottom: 50px;
     text-align: center;
-    align-items: center;
-    font-weight: 700;
+    padding-top: 94px;
 }
+
+.doing {
+    padding-bottom: 94px;
+}
+
 
 /* Our team */
 
-
 .team {
-    background-color: var(--background-two);
-  text-align: center;
-  font-weight: 700;
+    background-color: var(--background-two) ;
+    padding-bottom: 94px;
+    
 }
 
-.team .name {
-    font-size: 16px;
+.job, .name {
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.name {
+    color: var(--second-color);
     font-weight: 500;
+    font-size: 16px;
 }
 
-.team .job {
-    font-size: 16px;
+.job {
     color: var(--contact-color);
+    font-size: 16px;
 }
+
+.team-card-1, .team-card-2 , .team-card-3, .team-card-4 {
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    
+}
+
 
 /* Offer categories */
 
@@ -176,13 +306,20 @@ background-color: var(--background-two);
     font-style: underline;
 }
 
+.footer-contact {
+    display: block;
+    padding-left: 215px;
+}
 
 .footer-nav {
     background-color: var(--background-one);
+    width: auto;
+    height: 252px;
 }
 
 .contact > ul > li {
-    color:#FFFFFF
+    color:#FFFFFF;
+    padding: 9px;
 }
 
 .contact > ul > li > a {
@@ -213,8 +350,11 @@ background-color: var(--background-two);
         font-weight: 700;
         font-family: "Raleway";
         cursor: pointer;
+        padding-top: 60px;
+        padding-left: 215px;
 }
 
 .footer-logo > a {
     color: #FFFFFF;
 }
+
