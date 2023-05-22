@@ -301,6 +301,8 @@ background-color: var(--background-two);
 .footer-nav {
     background-color: var(--background-one);
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contact>ul>li {
@@ -314,7 +316,7 @@ background-color: var(--background-two);
 }
 
 
-.contact>ul>li>a:hover {
+.contact>ul>li>a:not(:first-child) :hover {
 
     color: var(--basic-color);
 
@@ -332,10 +334,10 @@ background-color: var(--background-two);
     font-family: "Raleway";
     cursor: pointer;
     padding-top: 60px;
-    margin-left: 45px;
-
+    
 }
 
 .footer-logo > a {
     color: #FFFFFF;
 }
+
